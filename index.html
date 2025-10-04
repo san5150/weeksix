@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Interactive Web Page</h1>
+    </header>
+
+    <!-- Buttons / Interactive Section -->
+    <section id="interactive">
+        <h2>Interactive Features</h2>
+        <button id="toggleModeBtn">Toggle Light/Dark Mode</button>
+        <p>Counter: <span id="counter">0</span></p>
+        <button id="incrementBtn">Increase Counter</button>
+    </section>
+
+    <!-- Collapsible FAQ Section -->
+    <section id="faq">
+        <h2>FAQ</h2>
+        <button class="faq-question">What is this page?</button>
+        <div class="faq-answer">This is a demo interactive page.</div>
+        <button class="faq-question">How do I use it?</button>
+        <div class="faq-answer">Click buttons or fill the form below.</div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section id="form-section">
+        <h2>Sign Up Form</h2>
+        <form id="signupForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+            <span class="error" id="passwordError"></span><br>
+
+            <button type="submit">Submit</button>
+            <p id="formSuccess"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
